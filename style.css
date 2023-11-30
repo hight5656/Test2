@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://1prof.by/wp-content/uploads/2022/06/slova-0606.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#question {
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape-for-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 650px;
+    width: 85%;
+    max-height: 900px;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons-div {
+    display: flex;
+    align-items: center;
+}
+
+#user-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+button {
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 3px solid;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+@media screen and (max-width: 600px) {
+    .shape-for-form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .shape-for-form {
+        width: 100%;
+    }
+}

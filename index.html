@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <ul id="navbar">
+                <li class="dropdown">
+                    <a href="#" role="button">Choice of difficulty</a>
+                    <ul class="dropdown-menu">
+                        <li><a id="easy" href="#">Easy</a></li>
+                        <li><a id="normal" href="#">Normal</a></li>
+                        <li><a id="hard" href="#">Hard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="shape-for-form">
+            <div id="user-info">
+                <h2 id="user-name">User Name</h2>
+                <h3 id="score">True: 0 False: 0</h3>
+                <h2 id="number">0/0</h2>
+            </div>
+            <div class="form-content">
+                <div class="form-control" id="question-div">
+                    <h3 id="question">Text</h3>
+                </div>
+                <div>
+                    <input type="text" id="answer" aria-label="translation">
+                    <button type="button" id="button-addon2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
